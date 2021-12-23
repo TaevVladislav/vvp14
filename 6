@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n; int n0 = 0; int n1 = 1; int c = 1;
+	cout << "N - ";
+	cin >> n;
+	while (n != n1 and n != n0)
+	{
+		n0 = n1 + n0;
+		c++;
+		if (n0 == n) {
+			break;
+		}
+		n1 = n0 + n1;
+		c++;
+		if (c > 999) {
+			break;
+		}
+	}
+	if (c != 1001) {
+		cout << "K = " << c;
+	}
+	else {
+	}
+}
