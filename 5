@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a; int b; int r;
+	cout << "A - ";
+	cin >> a;
+	cout << "B - ";
+	cin >> b;
+	do {
+		r = abs(a - b);
+		a = b;
+		b = r;
+		cout << r << endl;
+	} while (a != b * 2);
+	cout << "NOD = " << r;
+}
