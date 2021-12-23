@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	double n = 1000; double p; int k = 0;
+	cout << "Enter P - ";
+	cin >> p;
+	while (n < 1100) {
+		k++;
+		n += n * (p / 100);
+	}
+	cout << "S = " << n << endl;
+	cout << "K = " << k;
+}
